@@ -1,0 +1,55 @@
+---
+
+# Deployment
+
+kind: Deployment
+apiVersion: extensions/v1beta1
+metadata:
+  name: postgres-demo-api
+  namespace: gemma
+  labels:
+    k8s-app: postgres-demo-api
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      k8s-app: postgres-demo-api
+  template:
+    metadata:
+      name: postgres-demo-api
+      labels:
+        k8s-app: postgres-demo-api
+    spec:
+      volumes:
+      - name: data
+        hostPath:
+          path: "/storage/gemma-postgres-demo-api"
+          type: ''
+      containers:
+      - name: postgres
+        image: postgres:11
+        env:
+          - name: POSTGRES_PASSWORD
+            value: <REDACTED>
+        volumeMounts:
+          - name: data
+            mountPath: "/var/lib/postgresql/data"
+
+---
+
+# Service
+
+kind: Service
+apiVersion: v1
+metadata:
+  name: postgres-demo-api
+  namespace: gemma
+  labels:
+    k8s-app: postgres-demo-api
+spec:
+  selector:
+    k8s-app: postgres-demo-api
+  ports:
+  - protocol: TCP
+    port: 5432
+    targetPort: 5432
