@@ -7,7 +7,7 @@ info:
     email: support@maykinmedia.nl
   license:
     name: EUPL 1.2
-  version: 1.0.0
+  version: 1.0.1
 security:
 - JWT-Claims: []
 paths:
@@ -440,6 +440,7 @@ components:
       properties:
         url:
           title: Url
+          description: De volledige resource identifier als URL.
           type: string
           format: uri
           readOnly: true
