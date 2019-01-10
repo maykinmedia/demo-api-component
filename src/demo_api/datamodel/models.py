@@ -13,6 +13,14 @@ class Quote(models.Model):
         _("quote"), max_length=200,
         help_text=_("De tekst van de quote.")
     )
+    bron_naam = models.CharField(
+        _("bron naam"), max_length=200,
+        help_text=_("Naam van de bron.")
+    )
+    bron_link = models.URLField(
+        _("bron link"), blank=True,
+        help_text=_("Link naar de oorspronkelijke bron.")
+    )
     aangemaakt = models.DateTimeField(
         _("aangemaakt"), auto_now_add=True,
         help_text=_("Datum en tijd van wanneer het object is aangemaakt.")
