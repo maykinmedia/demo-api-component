@@ -10,6 +10,9 @@ class QuoteViewSet(mixins.CreateModelMixin,
                    mixins.ListModelMixin,
                    viewsets.GenericViewSet):
     """
+    Een `quote` kan van alles zijn, zoals een bepaalde uitspraak van iemand, of
+    een gezegde, of andere wijsheid.
+
     list:
     Bekijk de lijst van quotes.
 
