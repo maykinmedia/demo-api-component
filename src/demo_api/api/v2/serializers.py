@@ -14,6 +14,7 @@ class QuoteSerializer(serializers.HyperlinkedModelSerializer):
             'bron_naam',
             'bron_link',
             'aangemaakt',
+            'laatst_bijgewerkt',
         )
         extra_kwargs = {
             'url': {
