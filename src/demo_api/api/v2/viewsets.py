@@ -1,14 +1,11 @@
-from rest_framework import mixins, viewsets
+from rest_framework import viewsets
 
 from demo_api.datamodel.models import Quote
 
 from .serializers import QuoteSerializer
 
 
-class QuoteViewSet(mixins.CreateModelMixin,
-                   mixins.RetrieveModelMixin,
-                   mixins.ListModelMixin,
-                   viewsets.GenericViewSet):
+class QuoteViewSet(viewsets.ModelViewSet):
     """
     list:
     Bekijk de lijst van quotes.
