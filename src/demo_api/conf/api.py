@@ -1,7 +1,7 @@
 from zds_schema.conf.api import *  # noqa - imports white-listed
 
 API_1_VERSION = '1.0.1'
-API_2_VERSION = '2.0.0'
+API_2_VERSION = '2.1.0'
 
 REST_FRAMEWORK = BASE_REST_FRAMEWORK.copy()
 REST_FRAMEWORK.update({

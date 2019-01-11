@@ -22,7 +22,7 @@ spec:
     spec:
       containers:
       - name: demo-api
-        image: vngr/demo-api-component:2.0.0
+        image: vngr/demo-api-component:2.1.0
         env:
           - name: DJANGO_SETTINGS_MODULE
             value: demo_api.conf.docker

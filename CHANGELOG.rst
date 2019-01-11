@@ -2,6 +2,16 @@
 Changelog
 =========
 
+2.1.0
+=====
+
+* De ``Quote``-resource ondersteund nu ``PUT`` (update) en ``PATCH`` (partial
+  update) operaties, waarmee een ``Quote`` kan worden bijgewerkt.
+* Attribuut ``Quote.laatstBijgewerkt`` (alleen lezen) toegevoegd. Deze wordt
+  voorzien van de huidige datum/tijd als de ``Quote`` wordt bijgewerkt. Als het
+  object nog nooit is bijgewerkt, heeft dit attribuut de waarde ``null``.
+  De standaard waarde na migratie is de waarde ``null``.
+
 
 2.0.0
 =====

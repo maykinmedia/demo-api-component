@@ -2,7 +2,7 @@
 Demo API Component
 ==================
 
-:Version: 2.0.0
+:Version: 2.1.0
 :Source: https://github.com/maykinmedia/demo-api-component
 :Keywords: VNG, VNG-realisatie, demo, api
 :PythonVersion: 3.6
