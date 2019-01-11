@@ -26,7 +26,8 @@ urlpatterns = [
 
     # Simply show the master template.
     path('', RedirectView.as_view(
-        url=reverse_lazy('schema-redoc', kwargs={'version': '1'})
+        # TODO: Bit redundant. Might want to switch to namespace versioning.
+        url=reverse_lazy('v2:schema-redoc', kwargs={'version': settings.REST_FRAMEWORK['DEFAULT_VERSION']})
     )),
 ]
 

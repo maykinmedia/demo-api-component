@@ -7,7 +7,7 @@ info:
     email: support@maykinmedia.nl
   license:
     name: EUPL 1.2
-  version: 1.0.1
+  version: 2.0.0
 security:
 - JWT-Claims: []
 paths:
@@ -425,7 +425,7 @@ paths:
         type: string
         format: uuid
 servers:
-- url: /api/v1
+- url: /api/v2
 components:
   securitySchemes:
     JWT-Claims:
@@ -436,6 +436,7 @@ components:
     Quote:
       required:
       - tekst
+      - bronNaam
       type: object
       properties:
         url:
@@ -450,6 +451,18 @@ components:
           type: string
           maxLength: 200
           minLength: 1
+        bronNaam:
+          title: Bron naam
+          description: Naam van de bron.
+          type: string
+          maxLength: 200
+          minLength: 1
+        bronLink:
+          title: Bron link
+          description: Link naar de oorspronkelijke bron.
+          type: string
+          format: uri
+          maxLength: 200
         aangemaakt:
           title: Aangemaakt
           description: Datum en tijd van wanneer het object is aangemaakt.

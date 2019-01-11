@@ -4,7 +4,7 @@ from drf_yasg import openapi
 
 info = openapi.Info(
     title="Demo API Component",
-    default_version=settings.API_VERSION,
+    default_version=settings.API_2_VERSION,
     description="Een voorbeeld van een OAS 3.0 API met bijbehorende referentie "
                 "implementatie.",
     contact=openapi.Contact(

@@ -11,11 +11,14 @@ class QuoteSerializer(serializers.HyperlinkedModelSerializer):
         fields = (
             'url',
             'tekst',
+            'bron_naam',
+            'bron_link',
             'aangemaakt',
         )
         extra_kwargs = {
             'url': {
                 'lookup_field': 'uuid',
+                'view_name': 'v2:quote-detail',
                 'help_text': _('De volledige resource identifier als URL.')
             }
         }
