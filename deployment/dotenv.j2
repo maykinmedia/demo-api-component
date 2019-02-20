@@ -3,11 +3,6 @@
 import raven
 from .base import BASE_DIR
 
-sentry_dsn = '{{ dsn_url }}'
-sentr_public_dsn = '{{ dsn_public_url }}'
+sentry_dsn = "{{ dsn_url }}"
+sentry_public_dsn = "{{ dsn_public_url }}"
 
-RAVEN_CONFIG = {
-    'dsn': '{{ dsn_url }}',
-    'public_dsn': '{{ dsn_public_url }}',
-    'release': raven.fetch_git_sha(BASE_DIR),
-}

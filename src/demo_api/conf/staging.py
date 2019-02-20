@@ -99,7 +99,7 @@ INSTALLED_APPS = INSTALLED_APPS + [
 ]
 RAVEN_CONFIG = {
     'dsn': os.getenv('sentry_dsn'),
-    'public_dsn': os.getenv('sentr_public_dsn'),
+    'public_dsn': os.getenv('sentry_public_dsn'),
     'release': raven.fetch_git_sha(BASE_DIR),
 }
 LOGGING['handlers'].update({
