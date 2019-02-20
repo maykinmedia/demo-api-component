@@ -13,7 +13,7 @@ description = """
 Set up my development environment for me!
 """
 
-project_name = 'apidemo'
+project_name = 'demo_api'
 
 parser = argparse.ArgumentParser(description=description)
 parser.add_argument('target', choices=['production', 'staging', 'test', 'jenkins', 'development'],
