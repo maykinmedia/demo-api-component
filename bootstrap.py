@@ -13,7 +13,7 @@ description = """
 Set up my development environment for me!
 """
 
-project_name = 'vng'
+project_name = 'apidemo'
 
 parser = argparse.ArgumentParser(description=description)
 parser.add_argument('target', choices=['production', 'staging', 'test', 'jenkins', 'dev'],
@@ -100,6 +100,7 @@ def pip_compile_pin_requirements(virtualenv):
     call('../{0} base.in'.format(pip_compile), shell=True)
     os.chdir('..')
 
+
 def main():
     virtualenv = args.env
     if not hasattr(sys, 'real_prefix'):
@@ -138,6 +139,7 @@ def main():
         pip_path = os.path.join(virtualenv, 'Scripts', 'pip')
         cmd_tpl = '{pip} install -r requirements\\{target}.txt'
     return call(cmd_tpl.format(pip=pip_path, target=args.target), shell=True)
+
 
 if __name__ == '__main__':
     sys.exit(main())
