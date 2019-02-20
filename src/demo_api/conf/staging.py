@@ -97,11 +97,7 @@ SECURE_BROWSER_XSS_FILTER = True # Sets X-XSS-Protection: 1; mode=block
 INSTALLED_APPS = INSTALLED_APPS + [
     'raven.contrib.django.raven_compat',
 ]
-RAVEN_CONFIG = {
-    'dsn': 'https://', # https://username:password@sentry-domain/project-nr
-    'public_dsn': '', # https://username@sentry-domain/project-nr
-    'release': raven.fetch_git_sha(BASE_DIR),
-}
+RAVEN_CONFIG = os.getenv('RAVEN_CONFIG')
 LOGGING['handlers'].update({
     'sentry': {
         'level': 'WARNING',

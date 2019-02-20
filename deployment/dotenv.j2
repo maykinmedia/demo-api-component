@@ -1,2 +1,11 @@
 # Feel free to use this for setting environment variables upon deploy
 # DJANGO_SETTINGS_MODULE="{{ django_settings_module }}"
+import raven
+from .base import BASE_DIR
+
+
+RAVEN_CONFIG = {
+    'dsn': '{{ dsn_url }}',
+    'public_dsn': '{{ dsn_public_url }}',
+    'release': raven.fetch_git_sha(BASE_DIR),
+}
