@@ -97,6 +97,4 @@ ARG SECRET_KEY=dummy
 RUN python src/manage.py collectstatic --noinput
 
 EXPOSE 8000
-
-RUN ["chmod", "+x", "/start.sh"]
 CMD ["/start.sh"]
