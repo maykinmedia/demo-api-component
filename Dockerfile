@@ -93,6 +93,8 @@ ENV DJANGO_SETTINGS_MODULE=demo_api.conf.docker
 
 ENV SECRET_KEY=dummy
 
+RUN python src/manage.py migrate
+
 # Run collectstatic, so the result is already included in the image
 RUN python src/manage.py collectstatic --noinput
 
