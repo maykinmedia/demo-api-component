@@ -7,7 +7,7 @@ from .base import *  # noqa isort:skip
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.getenv('DB_NAME', 'demoapi.db'),
+        'NAME': os.getenv('DB_NAME', '/app/demoapi.db'),
     }
 }
 
