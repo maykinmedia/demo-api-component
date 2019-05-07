@@ -1,6 +1,6 @@
-==================
+
 Demo API Component
-==================
+
 
 :Version: 2.1.0
 :Source: https://github.com/maykinmedia/demo-api-component
@@ -9,6 +9,8 @@ Demo API Component
 
 |build-status| |requirements|
 
+[![Status badge](https://img.shields.io/endpoint.svg?style=for-the-badge&amp;url=https://vng-staging.maykin.nl/api/v1/provider-run-shield/127/)](https://vng-staging.maykin.nl/server/33418afd-e667-4892-96ed-4124fe21c54e)
+
 Een voorbeeld van een OAS 3.0 API met bijbehorende referentie implementatie.
 Deze repository is hoofdzakelijk voor intern gebruik bij VNG.
 
@@ -16,7 +18,6 @@ De OAS 3.0 specificatie staat in de `API specificatie repository`_.
 
 
 Inleiding
-=========
 
 Om verschillende zaken gerelateerd aan het nieuwe API-landschap te begrijpen,
 beheren, ontwikkelen, uitrollen, testen, etc. kan deze repository gebruikt 
@@ -30,7 +31,6 @@ Het component is te testen op de `testomgeving`_.
 
 
 Documentatie
-=============
 
 Zie ``INSTALL.rst`` voor installatie instructies en beschikbare commando's.
 
