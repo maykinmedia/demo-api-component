@@ -9,8 +9,6 @@ Demo API Component
 
 |build-status| |requirements|
 
-[![Status badge](https://img.shields.io/endpoint.svg?style=for-the-badge&amp;url=https://vng-staging.maykin.nl/api/v1/provider-run-shield/127/)](https://vng-staging.maykin.nl/server/33418afd-e667-4892-96ed-4124fe21c54e)
-
 Een voorbeeld van een OAS 3.0 API met bijbehorende referentie implementatie.
 Deze repository is hoofdzakelijk voor intern gebruik bij VNG.
 
