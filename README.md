@@ -2,10 +2,10 @@
 Demo API Component
 
 
-:Version: 2.1.0
-:Source: https://github.com/maykinmedia/demo-api-component
-:Keywords: VNG, VNG-realisatie, demo, api
-:PythonVersion: 3.6
+Version: 2.1.0
+Source: https://github.com/maykinmedia/demo-api-component
+Keywords: VNG, VNG-realisatie, demo, api
+PythonVersion: 3.6
 
 |build-status| |requirements|
 
@@ -36,7 +36,6 @@ Zie ``INSTALL.rst`` voor installatie instructies en beschikbare commando's.
 
 
 Referenties
-===========
 
 * `API specificatie repository`_
 * `Issues <https://github.com/maykinmedia/demo-api-component/issues>`_
@@ -56,7 +55,6 @@ Referenties
 
 
 Licentie
-========
 
 Copyright © VNG Realisatie 2019
 
