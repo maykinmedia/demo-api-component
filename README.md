@@ -6,6 +6,8 @@ Demo API Component
  * Source: https://github.com/maykinmedia/demo-api-component
  * Keywords: VNG, VNG-realisatie, demo, api
  * PythonVersion: 3.6
+ 
+ [![Status badge](https://img.shields.io/endpoint.svg?style=for-the-badge&amp;url=https://vng-staging.maykin.nl/api/v1/provider-run-shield/135/)](https://vng-staging.maykin.nl/server/d28ca332-f2ee-4b95-9918-d94a24da96c3)
 
 Een voorbeeld van een OAS 3.0 API met bijbehorende referentie implementatie.
 Deze repository is hoofdzakelijk voor intern gebruik bij VNG.
