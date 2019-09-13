@@ -7,7 +7,7 @@ Demo API Component
  * Keywords: VNG, VNG-realisatie, demo, api
  * PythonVersion: 3.6
  
-[![Status badge](https://img.shields.io/endpoint.svg?style=for-the-badge&amp;url=https://api-test.nl/api/v1/provider-run-shield/6fa1686a-b6e9-48e1-8260-12bb2d386ff8/)](https://api-test.nl/server/6fa1686a-b6e9-48e1-8260-12bb2d386ff8/)
+[![Status badge](https://img.shields.io/endpoint.svg?style=for-the-badge&amp;url=https%3A//api-test.nl/api/v1/provider-latest-badge/Demo%2520API%2520v2/steven/)](https%3A//api-test.nl/api/v1/provider-latest-badge/Demo%2520API%2520v2/steven/)
 
 Een voorbeeld van een OAS 3.0 API met bijbehorende referentie implementatie.
 Deze repository is hoofdzakelijk voor intern gebruik bij VNG.
