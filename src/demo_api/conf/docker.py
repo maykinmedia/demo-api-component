@@ -2,12 +2,14 @@ import os
 
 from django.core.exceptions import ImproperlyConfigured
 
-os.environ.setdefault('DB_USER', os.getenv('DATABASE_USER', 'postgres'))
-os.environ.setdefault('DB_NAME', os.getenv('DATABASE_NAME', 'postgres'))
-os.environ.setdefault('DB_PASSWORD', os.getenv('DATABASE_PASSWORD', ''))
-os.environ.setdefault('DB_HOST', os.getenv('DATABASE_HOST', 'db'))
-
 from .base import *  # noqa isort:skip
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.getenv('DB_NAME', '/app/demoapi.db'),
+    }
+}
 
 # Helper function
 missing_environment_vars = []
@@ -25,7 +27,7 @@ def getenv(key, default=None, required=False, split=False):
 #
 # Standard Django settings.
 #
-DEBUG = getenv('DEBUG', False)
+DEBUG = getenv('DEBUG', True)
 
 ADMINS = getenv('ADMINS', split=True)
 MANAGERS = ADMINS

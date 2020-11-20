@@ -91,7 +91,7 @@ COPY ./src /app/src
 
 ENV DJANGO_SETTINGS_MODULE=demo_api.conf.docker
 
-ARG SECRET_KEY=dummy
+ENV SECRET_KEY=dummy
 
 RUN python src/manage.py migrate
 
